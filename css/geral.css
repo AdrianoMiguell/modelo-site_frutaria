@@ -1,0 +1,38 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@import "./navbar.css";
+@import "./img.css";
+@import "./text.css";
+/* @import "./carousel.css"; */
+
+@import "./media.css";
+
+:root{
+    --main-color: 1, 8, 16;
+    --sec-color: 233, 135, 60;
+    --tert-color: 83, 65, 55;
+    --light-color: 255, 250, 246;
+}
+#testeColor{
+    color: rgb(1, 8, 16);
+    color: rgb(233, 135, 60);
+    color: rgb(83, 65, 55);
+    color: rgb(255, 250, 246);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* overflow-x: hidden; */
+    min-height: 100vh;
+}
+footer{
+    margin-bottom: 0;
+    margin-top: 5em;
+}
+

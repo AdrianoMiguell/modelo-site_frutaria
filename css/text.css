@@ -1,0 +1,17 @@
+.text-banner{
+    position: absolute;
+    width: 100%;
+    padding: 5vw;
+}
+.text-banner > h1{
+    display: grid;
+    color: rgb(var(--light-color));
+    font-size: 55pt;
+    text-align: start;
+    line-height: 50pt;
+    text-shadow: 0 0 5px rgb(var(--main-color));
+}
+.text-banner > span{
+    color: rgb(var(--light-color));
+    text-shadow: 0 0 5px rgb(var(--main-color));
+}

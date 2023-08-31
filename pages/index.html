@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FruitShop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="stylesheet" href="../css/geral.css" />
+  </head>
+  <body>
+    <!-- Nav tabs -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="navbar-brand">
+          <span> Fruit Shop </span>
+        </div>
+
+        <div
+          class="navbar-collapse-flex d-flex flex-row-reverse gap-5 align-items-center"
+        >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+               -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Produtos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Sobre</a>
+            </li>
+          </ul> -->
+
+    <div class="limit-banner appear">
+      <img
+        src="../img/frutas-frescas-e-vegetais-em-uma-grande-cesta.jpg"
+        class="d-block w-100"
+        alt="..."
+      />
+      <div class="text-banner">
+        <h1>Frutas variadas</h1>
+        <span> Venha experimentar as melhores frutas da região bem aqui! </span>
+      </div>
+    </div>
+
+    <style>
+      /* .menuOpcoes {
+        height: 250px;
+        width: 100vw;
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+        overflow: hidden;
+        background-color: aqua;
+      }
+      .menuOpcoes .areaOpcoes {
+        width: 100%;
+        height: auto;
+        background-color: red;
+      }
+      .menuOpcoes .areaOpcoes {
+        display: flex;
+        width: 100%;
+        height: auto;
+        background-color: red;
+      }
+      .menuOpcoes .areaOpcoes .opcoes {
+        display: grid;
+      }
+      .menuOpcoes .areaOpcoes .opcoes img{
+        width: 100%;
+        height: auto;
+      }
+      .menuOpcoes .areaOpcoes .frutasFrescas span,
+      .menuOpcoes .areaOpcoes .frutasSecas span{
+        display: none;
+      }
+      .menuOpcoes .areaOpcoes .frutasFrescas:hover ~ .frutasFrescas span,
+      .menuOpcoes .areaOpcoes .frutasSecas:hover ~ .frutasSecas span{
+        display: block !important;
+      } */
+      /* .menuOpcoes .frutasFrescas {
+        overflow: hidden;
+        width: 150px;
+        height: auto;
+      }
+      .menuOpcoes .frutasFrescas img{
+        width: 150px;
+        height: auto;
+      } */
+    </style>
+
+    <h2>Menu de opções</h2>
+
+    <div class="menuOpcoes">
+      <div class="areaOpcoes">
+        <div class="opcoes frutasFrescas">
+          <img width="100px" src="../img/frutas/frutas_frescas.jpg" alt="" />
+          <span>frutas frescas</span>
+        </div>
+        <div class="opcoes frutasSecas">
+          <img width="100px" src="../img/frutas/frutas-secas.jpg" alt="" />
+          <span>frutas secas</span>
+        </div>
+      </div>
+
+      <div class="frutasCitricas">
+        <img width="100px" src="../img/frutas/frutas-citricas.jpg" alt="" />
+        <span>frutas citricas</span>
+      </div>
+      <div class="frutasVermelhas">
+        <img
+          width="100px"
+          src="../img/frutas/morango-sobre-vasilha.jpg"
+          alt=""
+        />
+        <span>frutas vermelhas</span>
+      </div>
+      <div class="verduras">
+        <img width="100px" src="../img/frutas/verduras.jpg" alt="" />
+        <span>verduras</span>
+      </div>
+      <div class="legumes">
+        <img width="100px" src="../img/frutas/legumes.jpg" alt="" />
+        <span>legumes</span>
+      </div>
+    </div>
+
+    <div class="importanciaDasFrutas">
+      <div class="imgPosterImportant">
+        <img width="100%" src="../img/mistura-de-frutas-numa-mesa.jpg" alt="" />
+      </div>
+      <blockquote class="mensagemPosterImportant">
+        poster com frase “Comer é uma necessidade, mas comer com inteligência é
+        uma arte. ” – François de la Rochefoucauld Escolha o natural!
+      </blockquote>
+    </div>
+
+    <div class="frutasDisponiveis">
+      <h2>Selecione as frutas</h2>
+      <div class="divFrutasDisponiveis">
+        <div class="frutaDisp apple">
+          <img
+            width="100px"
+            src="../img/frutas/macas-frescas-frescas.jpg"
+            alt=""
+            class="imgFrutaDisp"
+          />
+          <div class="infoFrutasDisp">
+            <span class="frutaName"> Maçã </span>
+            <span class="frutaPrice"> price </span>
+            <button class="btnAddCart">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="frutaDisp strawberry">
+          <img
+            width="100px"
+            src="../img/frutas/morango-sobre-vasilha.jpg"
+            alt=""
+            class="imgFrutaDisp"
+          />
+          <div class="infoFrutasDisp">
+            <span class="frutaName"> morango </span>
+            <span class="frutaPrice"> price </span>
+            <button class="btnAddCart">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="frutaDisp acerola">
+          <img
+            width="100px"
+            src="../img/frutas/acerola-em-grande-quantidade.jpg"
+            alt=""
+            class="imgFrutaDisp"
+          />
+          <div class="infoFrutasDisp">
+            <span class="frutaName"> Acerola </span>
+            <span class="frutaPrice"> price </span>
+            <button class="btnAddCart">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="frutaDisp watermelon">
+          <img
+            width="100px"
+            src="../img/frutas/morango-sobre-vasilha.jpg"
+            alt=""
+            class="imgFrutaDisp"
+          />
+          <div class="infoFrutasDisp">
+            <span class="frutaName"> Melancia </span>
+            <span class="frutaPrice"> price </span>
+            <button class="btnAddCart">Add to cart</button>
+          </div>
+        </div>
+
+        <div class="frutaDisp others">E muito mais</div>
+      </div>
+      butoes de compra : mostrar algumas das disponiveis no estoque
+    </div>
+
+    <div class="comments">
+      <h2>comentários do serviço</h2>
+      <div class="divComments">
+        <div class="customer">
+          <div class="textCustomer">
+            Fruits of qualities, besides delicious and beautiful. The best I've
+            ever bought!
+          </div>
+          <div class="imgCustomer">
+            <img
+              width="90px"
+              src="../img/customers/pexels-andrea-piacquadio.jpg"
+              alt=""
+            />
+          </div>
+          <div class="nameCustomer">Andrea Piacquadio</div>
+        </div>
+
+        <div class="customer">
+          <div class="textCustomer">
+            Once I started buying fruit at the fruit store, I started to love
+            eating it. Now I really appreciate them!
+          </div>
+          <div class="imgCustomer">
+            <img
+              width="90px"
+              src="../img/customers/pexels-hasibullah-zhowandai.jpg"
+              alt=""
+            />
+          </div>
+          <div class="nameCustomer">Hasibullah Zhowandai</div>
+        </div>
+
+        <div class="customer">
+          <div class="textCustomer">
+            High quality service and cost benefit. Excellent, I can only
+            congratulate FruitShop for the work done.
+          </div>
+          <div class="imgCustomer">
+            <img
+              width="90px"
+              src="../img/customers/pexels-shvets-production.jpg"
+              alt=""
+            />
+          </div>
+          <div class="nameCustomer">Kevin Smith</div>
+        </div>
+
+        <div class="customer">
+          <div class="textCustomer">
+            The best fruit I ever bought was from this fruit shop. They are more
+            delicious than the ones I bought in supermarkets. Thanks a lot for
+            the service.
+          </div>
+          <div class="imgCustomer">
+            <img
+              width="90px"
+              src="../img/customers/pexels-thirdman.jpg"
+              alt=""
+            />
+          </div>
+          <div class="nameCustomer">Thiago Fernandez</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="formsCadastro">
+      Mensagem e formulário de cadastro Venha experimentar as frutas mais
+      deliciosas da região.
+
+      <form onsubmit="() => {preventDefault();}">
+        <legend>Get your shopping list</legend>
+
+        <input type="text" class="inputForm" placeholder="Your Name *" />
+        <input type="text" class="inputForm" placeholder="Your E-mail *" />
+        <textarea name="" id="messageForm" cols="30" rows="10">
+          Message
+        </textarea>
+
+        <button>SEND MESSAGE</button>
+      </form>
+    </div>
+
+    <div class="amostraFrutas"></div>
+
+    <div class="anuncio">
+      <img src="" alt="" class="imgAnuncio" />
+    </div>
+
+    <footer>
+      <div>
+        muito mais | laranja maça pera banana alface tomate etc.
+        <div>salads</div>
+        <div></div>
+      </div>
+      <div>instagram facebook linkedin mail whatsApp</div>
+    </footer>
+
+    <script src="../js/geral.js"></script>
+    <script src="../js/scrollreveal.js"></script>
+  </body>
+</html>
+
+<!-- <a href="https://br.freepik.com/fotos-gratis/kiwis-frescos-isolados_8759405.htm#query=pera&position=25&from_view=search&track=sph">Imagem de Racool_studio</a> no Freepik -->
+
+<!-- <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/frutas-frescas-e-vegetais-em-uma-grande-cesta.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="../img/mistura-de-frutas-numa-mesa.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="../img/frutas-frescas-e-vegetais-em-uma-grande-cesta.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> -->

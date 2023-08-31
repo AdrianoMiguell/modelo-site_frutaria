@@ -1,0 +1,9 @@
+@media screen and (max-width: 580px) {
+    .navbar{
+        padding: 1em .5em;
+    }
+    .carousel-inner{
+        height: auto;
+        overflow: hidden;
+    }
+}

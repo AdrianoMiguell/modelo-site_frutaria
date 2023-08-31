@@ -1,0 +1,10 @@
+.limit-banner{
+    overflow: hidden;
+    width: auto;
+    min-height: auto;
+    max-height: 525px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
