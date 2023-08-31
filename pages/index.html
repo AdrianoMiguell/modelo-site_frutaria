@@ -170,9 +170,41 @@
       } */
     </style>
 
-    <h2>Menu de opções</h2>
+    <style>
+      .menuOpcoes {
+        margin: 10rem;
+        widows: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      .menuOpcoes h2 {
+        color: rgb(var(--sec-color));
+        font-weight: 600;
+        font-size: 24pt;
+        font-family: "Courgette", cursive;
+      }
+      .menuOpcoes .areaOpcoes {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin: 1em 0 5rem 0;
+      }
+      .menuOpcoes .areaOpcoes .opcoes {
+        display: grid;
+        gap: 5px;
+      }
+      .menuOpcoes .areaOpcoes .opcoes img {
+      }
+      .menuOpcoes .areaOpcoes .opcoes span {
+      }
+
+    </style>
 
     <div class="menuOpcoes">
+      <h2>Menu de opções</h2>
       <div class="areaOpcoes">
         <div class="opcoes frutasFrescas">
           <img width="100px" src="../img/frutas/frutas_frescas.jpg" alt="" />
@@ -182,27 +214,27 @@
           <img width="100px" src="../img/frutas/frutas-secas.jpg" alt="" />
           <span>frutas secas</span>
         </div>
-      </div>
 
-      <div class="frutasCitricas">
-        <img width="100px" src="../img/frutas/frutas-citricas.jpg" alt="" />
-        <span>frutas citricas</span>
-      </div>
-      <div class="frutasVermelhas">
-        <img
-          width="100px"
-          src="../img/frutas/morango-sobre-vasilha.jpg"
-          alt=""
-        />
-        <span>frutas vermelhas</span>
-      </div>
-      <div class="verduras">
-        <img width="100px" src="../img/frutas/verduras.jpg" alt="" />
-        <span>verduras</span>
-      </div>
-      <div class="legumes">
-        <img width="100px" src="../img/frutas/legumes.jpg" alt="" />
-        <span>legumes</span>
+        <div class="opcoes frutasCitricas">
+          <img width="100px" src="../img/frutas/frutas-citricas.jpg" alt="" />
+          <span>frutas citricas</span>
+        </div>
+        <div class="opcoes frutasVermelhas">
+          <img
+            width="100px"
+            src="../img/frutas/morango-sobre-vasilha.jpg"
+            alt=""
+          />
+          <span>frutas vermelhas</span>
+        </div>
+        <div class="opcoes verduras">
+          <img width="100px" src="../img/frutas/verduras.jpg" alt="" />
+          <span>verduras</span>
+        </div>
+        <div class="legumes">
+          <img width="100px" src="../img/frutas/legumes.jpg" alt="" />
+          <span>legumes</span>
+        </div>
       </div>
     </div>
 

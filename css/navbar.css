@@ -29,11 +29,12 @@
     position: absolute !important;
 }
 
-/* Botão de collapse */
-.navbar-collapse{
+/* Botão de collapse 
+ .navbar-collapse{
     display: flex;
-    align-items: center;
-}
+    /* align-items: center;
+    justify-content: center; 
+} */
 .navbar-toggler:not(hover) {
     box-shadow: none !important;
     border: none !important;
