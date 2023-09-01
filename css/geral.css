@@ -1,9 +1,11 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Inter:wght@400;600&display=swap');
 
 @import "./navbar.css";
 @import "./img.css";
 @import "./text.css";
+@import "./opcoes.css";
+@import "./classes.css";
 /* @import "./carousel.css"; */
 
 @import "./media.css";
@@ -28,7 +30,7 @@
 }
 
 body{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     min-height: 100vh;
 }
 footer{

@@ -28,7 +28,7 @@
         </div>
 
         <div
-          class="navbar-collapse-flex d-flex flex-row-reverse gap-5 align-items-center"
+          class="navbar-collapse-flex d-flex flex-row-reverse gap-3 align-items-center"
         >
           <button
             class="navbar-toggler"
@@ -39,15 +39,12 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="bi bi-list"></i>
+            <i class="bi bi-list open"></i>
+            <i class="bi bi-x-lg cloused block"></i>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <!-- <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-               -->
+            <ul class="navbar-nav">
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -82,35 +79,6 @@
       </div>
     </nav>
 
-    <!-- <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Produtos
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contato">Contato</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#sobre">Sobre</a>
-            </li>
-          </ul> -->
-
     <div class="limit-banner appear">
       <img
         src="../img/frutas-frescas-e-vegetais-em-uma-grande-cesta.jpg"
@@ -123,117 +91,112 @@
       </div>
     </div>
 
-    <style>
-      /* .menuOpcoes {
-        height: 250px;
-        width: 100vw;
-        display: flex;
-        display: grid;
-        grid-template-columns: repeat(2, 350px);
-        overflow: hidden;
-        background-color: aqua;
-      }
-      .menuOpcoes .areaOpcoes {
-        width: 100%;
-        height: auto;
-        background-color: red;
-      }
-      .menuOpcoes .areaOpcoes {
-        display: flex;
-        width: 100%;
-        height: auto;
-        background-color: red;
-      }
-      .menuOpcoes .areaOpcoes .opcoes {
-        display: grid;
-      }
-      .menuOpcoes .areaOpcoes .opcoes img{
-        width: 100%;
-        height: auto;
-      }
-      .menuOpcoes .areaOpcoes .frutasFrescas span,
-      .menuOpcoes .areaOpcoes .frutasSecas span{
-        display: none;
-      }
-      .menuOpcoes .areaOpcoes .frutasFrescas:hover ~ .frutasFrescas span,
-      .menuOpcoes .areaOpcoes .frutasSecas:hover ~ .frutasSecas span{
-        display: block !important;
-      } */
-      /* .menuOpcoes .frutasFrescas {
-        overflow: hidden;
-        width: 150px;
-        height: auto;
-      }
-      .menuOpcoes .frutasFrescas img{
-        width: 150px;
-        height: auto;
-      } */
-    </style>
-
-    <style>
-      .menuOpcoes {
-        margin: 10rem;
-        widows: 100%;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 15px;
-      }
-      .menuOpcoes h2 {
-        color: rgb(var(--sec-color));
-        font-weight: 600;
-        font-size: 24pt;
-        font-family: "Courgette", cursive;
-      }
-      .menuOpcoes .areaOpcoes {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 15px;
-        margin: 1em 0 5rem 0;
-      }
-      .menuOpcoes .areaOpcoes .opcoes {
-        display: grid;
-        gap: 5px;
-      }
-      .menuOpcoes .areaOpcoes .opcoes img {
-      }
-      .menuOpcoes .areaOpcoes .opcoes span {
-      }
-
-    </style>
-
     <div class="menuOpcoes">
       <h2>Menu de opções</h2>
       <div class="areaOpcoes">
-        <div class="opcoes frutasFrescas">
-          <img width="100px" src="../img/frutas/frutas_frescas.jpg" alt="" />
-          <span>frutas frescas</span>
-        </div>
-        <div class="opcoes frutasSecas">
-          <img width="100px" src="../img/frutas/frutas-secas.jpg" alt="" />
-          <span>frutas secas</span>
+        <div class="opcoes">
+          <article class="ins-opcoes frutasFrescas">
+            <div class="imageOpcoes">
+              <img src="../img/frutas/frutas_frescas.jpg" alt="" />
+            </div>
+            <div class="contentOpcoes">
+              <div class="iconOpcoes">
+                <object
+                  data="../img/icons/light/apple_fruit_food_icon.svg"
+                  class="icon"
+                ></object>
+              </div>
+              <span> frutas frescas </span>
+            </div>
+          </article>
         </div>
 
-        <div class="opcoes frutasCitricas">
-          <img width="100px" src="../img/frutas/frutas-citricas.jpg" alt="" />
-          <span>frutas citricas</span>
+        <div class="opcoes">
+          <article class="ins-opcoes frutasSecas">
+            <div class="imageOpcoes">
+              <img src="../img/frutas/frutas-secas.jpg" alt="" />
+            </div>
+            <div class="contentOpcoes">
+              <div class="iconOpcoes">
+                <object
+                  data="../img/icons/light/dates_fruit_food_icon.svg"
+                  class="icon"
+                ></object>
+              </div>
+              <span> frutas secas </span>
+            </div>
+          </article>
         </div>
-        <div class="opcoes frutasVermelhas">
-          <img
-            width="100px"
-            src="../img/frutas/morango-sobre-vasilha.jpg"
-            alt=""
-          />
-          <span>frutas vermelhas</span>
+
+        <div class="opcoes">
+          <article class="ins-opcoes frutasCitricas">
+            <div class="imageOpcoes">
+              <img src="../img/frutas/frutas-citricas.jpg" alt="" />
+            </div>
+            <div class="contentOpcoes">
+              <div class="iconOpcoes">
+                <object
+                  data="../img/icons/light/lemon_fruit_icon.svg"
+                  class="icon"
+                ></object>
+              </div>
+              <span> frutas citricas </span>
+            </div>
+          </article>
         </div>
-        <div class="opcoes verduras">
-          <img width="100px" src="../img/frutas/verduras.jpg" alt="" />
-          <span>verduras</span>
+
+        <div class="opcoes">
+          <article class="ins-opcoes frutasVermelhas">
+            <div class="imageOpcoes">
+              <img
+                src="../img/frutas/acerola-em-grande-quantidade.jpg"
+                alt=""
+              />
+            </div>
+            <div class="contentOpcoes">
+              <div class="iconOpcoes">
+                <object
+                  data="../img/icons/light/strawberry_fruit_food_icon.svg"
+                  class="icon"
+                ></object>
+              </div>
+              <span> frutas vermelhas </span>
+            </div>
+          </article>
         </div>
-        <div class="legumes">
-          <img width="100px" src="../img/frutas/legumes.jpg" alt="" />
-          <span>legumes</span>
+
+        <div class="opcoes">
+          <article class="ins-opcoes verduras">
+            <div class="imageOpcoes">
+              <img src="../img/frutas/verduras.jpg" alt="" />
+            </div>
+            <div class="contentOpcoes">
+              <div class="iconOpcoes">
+                <object
+                  data="../img/icons/light/lettuce_vegetable_icon.com_62957.svg"
+                  class="icon"
+                ></object>
+              </div>
+              <span> verduras </span>
+            </div>
+          </article>
+        </div>
+
+        <div class="opcoes">
+          <article class="ins-opcoes legumes">
+            <div class="imageOpcoes">
+              <img src="../img/frutas/legumes.jpg" alt="" />
+            </div>
+            <div class="contentOpcoes">
+              <div class="iconOpcoes">
+                <object
+                  data="../img/icons/light/carrot_greenery_icon.svg"
+                  class="icon"
+                ></object>
+              </div>
+              <span> legumes </span>
+            </div>
+          </article>
         </div>
       </div>
     </div>
@@ -448,3 +411,52 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div> -->
+
+<style>
+    /* .menuOpcoes {
+      height: 250px;
+      width: 100vw;
+      display: flex;
+      display: grid;
+      grid-template-columns: repeat(2, 350px);
+      overflow: hidden;
+      background-color: aqua;
+    }
+    .menuOpcoes .areaOpcoes {
+      width: 100%;
+      height: auto;
+      background-color: red;
+    }
+    .menuOpcoes .areaOpcoes {
+      display: flex;
+      width: 100%;
+      height: auto;
+      background-color: red;
+    }
+    .menuOpcoes .areaOpcoes .opcoes {
+      display: grid;
+    }
+    .menuOpcoes .areaOpcoes .opcoes img{
+      width: 100%;
+      height: auto;
+    }
+    .menuOpcoes .areaOpcoes .frutasFrescas span,
+    .menuOpcoes .areaOpcoes .frutasSecas span{
+      display: none;
+    }
+    .menuOpcoes .areaOpcoes .frutasFrescas:hover ~ .frutasFrescas span,
+    .menuOpcoes .areaOpcoes .frutasSecas:hover ~ .frutasSecas span{
+      display: block !important;
+    } */
+    /* .menuOpcoes .frutasFrescas {
+      overflow: hidden;
+      width: 150px;
+      height: auto;
+    }
+    .menuOpcoes .frutasFrescas img{
+      width: 150px;
+      height: auto;
+    } */
+  /*
+</style>
+*/
