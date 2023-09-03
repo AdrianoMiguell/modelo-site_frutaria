@@ -17,6 +17,18 @@
     ></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+      integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw="
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="../css/geral.css" />
   </head>
   <body>
@@ -285,7 +297,7 @@
           <div class="divImgFrutaDisp">
             <img
               width="100px"
-              src="../img/frutas/morango-sobre-vasilha.jpg"
+              src="../img/frutas/fatias-de-melancia.webp"
               alt=""
               class="imgFrutaDisp"
             />
@@ -305,71 +317,72 @@
       </div>
     </div>
 
-    <div class="comments">
+    <section class="comments splide">
       <h2>comentários do serviço</h2>
-      <div class="divComments">
-        <div class="customer">
-          <div class="textCustomer">
-            Fruits of qualities, besides delicious and beautiful. The best I've
-            ever bought!
-          </div>
-          <div class="imgCustomer">
-            <img
-              width="90px"
-              src="../img/customers/pexels-andrea-piacquadio.jpg"
-              alt=""
-            />
-          </div>
-          <div class="nameCustomer">Andrea Piacquadio</div>
-        </div>
-
-        <div class="customer">
-          <div class="textCustomer">
-            Once I started buying fruit at the fruit store, I started to love
-            eating it. Now I really appreciate them!
-          </div>
-          <div class="imgCustomer">
-            <img
-              width="90px"
-              src="../img/customers/pexels-hasibullah-zhowandai.jpg"
-              alt=""
-            />
-          </div>
-          <div class="nameCustomer">Hasibullah Zhowandai</div>
-        </div>
-
-        <div class="customer">
-          <div class="textCustomer">
-            High quality service and cost benefit. Excellent, I can only
-            congratulate FruitShop for the work done.
-          </div>
-          <div class="imgCustomer">
-            <img
-              width="90px"
-              src="../img/customers/pexels-shvets-production.jpg"
-              alt=""
-            />
-          </div>
-          <div class="nameCustomer">Kevin Smith</div>
-        </div>
-
-        <div class="customer">
-          <div class="textCustomer">
-            The best fruit I ever bought was from this fruit shop. They are more
-            delicious than the ones I bought in supermarkets. Thanks a lot for
-            the service.
-          </div>
-          <div class="imgCustomer">
-            <img
-              width="90px"
-              src="../img/customers/pexels-thirdman.jpg"
-              alt=""
-            />
-          </div>
-          <div class="nameCustomer">Thiago Fernandez</div>
-        </div>
+      <div class="divComments splide__track">
+        <ul class="splide__list">
+          <article class="customer splide__slide">
+            <div class="textCustomer">
+              Fruits of qualities, besides delicious and beautiful. The best
+              I've ever bought!
+            </div>
+            <div class="infoCustomer">
+              <div class="imgCustomer">
+                <img
+                  src="../img/customers/pexels-andrea-piacquadio.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="nameCustomer">Andrea Piacquadio</div>
+            </div>
+          </article>
+          <article class="customer splide__slide">
+            <div class="textCustomer">
+              Once I started buying fruit at the fruit store, I started to love
+              eating it. Now I really appreciate them!
+            </div>
+            <div class="infoCustomer">
+              <div class="imgCustomer">
+                <img
+                  src="../img/customers/pexels-hasibullah-zhowandai.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="nameCustomer">Hasibullah Zhowandai</div>
+            </div>
+          </article>
+          <article class="customer splide__slide">
+            <div class="textCustomer">
+              High quality service and cost benefit. Excellent, I can only
+              congratulate FruitShop for the work done.
+            </div>
+            <div class="infoCustomer">
+              <div class="imgCustomer">
+                <img
+                  src="../img/customers/pexels-shvets-production.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="nameCustomer">Kevin Smith</div>
+            </div>
+          </article>
+          <article class="customer splide__slide">
+            <div class="textCustomer">
+              The best fruit I ever bought was from this fruit shop. They are
+              more delicious than the ones I bought in supermarkets. Thanks a
+              lot for the service.
+            </div>
+            <div class="infoCustomer">
+              <div class="imgCustomer">
+                <img src="../img/customers/pexels-thirdman.jpg" alt="" />
+              </div>
+              <div class="nameCustomer">Thiago Fernandez</div>
+            </div>
+          </article>
+        </ul>
       </div>
-    </div>
+    </section>
+    
 
     <div class="formsCadastro">
       Mensagem e formulário de cadastro Venha experimentar as frutas mais
@@ -388,6 +401,15 @@
       </form>
     </div>
 
+    <!-- 
+    <div class="splide">
+      <div class="sa">saosiadid</div>
+      <div class="sa">adhwydhsj</div>
+      <div class="sa">kdiwuasudhs</div>
+      <div class="sa">ddkjiuuuuuud</div>
+      <div class="sa">loppppppqppsps</div>
+    </div> -->
+
     <div class="amostraFrutas"></div>
 
     <div class="anuncio">
@@ -403,6 +425,14 @@
       <div>instagram facebook linkedin mail whatsApp</div>
     </footer>
 
+    <script>
+      var splide = new Splide(".splide", {
+        type: "loop",
+        padding: "10rem",
+      });
+
+      splide.mount();
+    </script>
     <script src="../js/geral.js"></script>
     <script src="../js/scrollreveal.js"></script>
   </body>

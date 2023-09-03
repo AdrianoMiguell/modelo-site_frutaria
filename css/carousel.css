@@ -1,4 +1,74 @@
-/* .carousel-inner{
-    height: 80vh;
-    overflow: hidden;
-} */
+.comments {
+  margin: 5rem;
+}
+.comments h2 {
+  text-align: center;
+  text-transform: capitalize;
+  color: rgb(var(--sec-color));
+  font-weight: 600;
+  font-size: 24pt;
+  font-family: "Courgette", cursive;
+  margin: 2rem;
+}
+
+.divComments {
+  position: relative;
+  padding: 2.5rem 0;
+}
+.divComments::after {
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    #ffffffee 5%,
+    transparent 20%,
+    transparent 50%,
+    transparent 80%,
+    #ffffffee 100%
+  );
+  position: absolute;
+}
+.divComments ul {
+}
+.divComments ul .customer {
+  box-shadow: 0 0 4px 1px rgba(var(--main-color), 0.05);
+  padding: 0.5rem;
+  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+  border-radius: 2.5px;
+}
+
+.customer .textCustomer {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.customer .infoCustomer { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.customer .infoCustomer .imgCustomer {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+}
+.infoCustomer .imgCustomer img {
+  width: 80px;
+  height: auto;
+}
+.infoCustomer .nameCustomer {
+  color: rgb(var(--sec-color));
+}
