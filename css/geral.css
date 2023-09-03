@@ -6,6 +6,7 @@
 @import "./text.css";
 @import "./opcoes.css";
 @import "./classes.css";
+@import "./cart.css";
 /* @import "./carousel.css"; */
 
 @import "./media.css";
@@ -14,13 +15,9 @@
     --main-color: 1, 8, 16;
     --sec-color: 233, 135, 60;
     --tert-color: 83, 65, 55;
+    --quat-color: 252, 169, 1;
+    --quin-color: 202, 70, 21;
     --light-color: 255, 250, 246;
-}
-#testeColor{
-    color: rgb(1, 8, 16);
-    color: rgb(233, 135, 60);
-    color: rgb(83, 65, 55);
-    color: rgb(255, 250, 246);
 }
 
 *{
