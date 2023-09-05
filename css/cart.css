@@ -21,7 +21,7 @@
 @media screen and (min-width: 600px) {
   .frutasDisponiveis {
     margin: 3.5rem 1rem;
-    padding: 3rem 2.5rem;
+    padding: 2.5rem;
     gap: 15px;
   }
   .frutasDisponiveis .areaCartFrutas {
@@ -39,8 +39,8 @@
 /* Para telas maiores que 980px */
 @media screen and (min-width: 980px) {
   .frutasDisponiveis {
-    margin: 5rem 1rem;
-    padding: 5rem 2.5rem;
+    margin: 3em 1rem;
+    padding: 3rem 2.5rem;
     gap: 15px;
   }
   .frutasDisponiveis .areaCartFrutas {
@@ -56,10 +56,8 @@
 
 }
 
-
-
 .frutasDisponiveis {
-  padding: 5rem 2.5rem;
+  padding: 2.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;

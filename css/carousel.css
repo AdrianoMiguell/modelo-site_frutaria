@@ -1,5 +1,9 @@
 .comments {
-  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 2.5rem;
 }
 .comments h2 {
   text-align: center;
@@ -8,12 +12,15 @@
   font-weight: 600;
   font-size: 24pt;
   font-family: "Courgette", cursive;
-  margin: 2rem;
+  margin-top: 0.25rem;
+  margin-bottom: 5rem;
 }
-
 .divComments {
+  margin: -1rem;
+  display: flex;
+  align-items: center;
   position: relative;
-  padding: 2.5rem 0;
+  padding: 2.5rem 1rem;
 }
 .divComments::after {
   content: "";
@@ -23,7 +30,7 @@
   bottom: 0;
   background: linear-gradient(
     to right,
-    #ffffffee 5%,
+    #ffffffee 10%,
     transparent 20%,
     transparent 50%,
     transparent 80%,
@@ -32,9 +39,10 @@
   position: absolute;
 }
 .divComments ul {
+  max-width: 800px;
 }
 .divComments ul .customer {
-  box-shadow: 0 0 4px 1px rgba(var(--main-color), 0.05);
+  max-width: 300px;
   padding: 0.5rem;
   margin: 0 2rem;
   display: flex;
@@ -42,13 +50,14 @@
   align-items: center;
   justify-content: space-around;
   gap: 15px;
-  border-radius: 2.5px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 1px rgba(var(--main-color), 0.125);
 }
 
 .customer .textCustomer {
   font-family: Arial, Helvetica, sans-serif;
 }
-.customer .infoCustomer { 
+.customer .infoCustomer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -71,4 +80,15 @@
 }
 .infoCustomer .nameCustomer {
   color: rgb(var(--sec-color));
+}
+
+.splide__list .splide__slide{
+  transition: .75s cubic-bezier(0.25, 0.15, 0.3, 1);
+}
+.splide__list .is-prev, .splide__list .is-next {
+  transform: translateY(0);
+}
+.splide__list .is-active {
+  transform: translateY(-2.5rem);
+  transition: 0.5s ease-in-out;
 }
